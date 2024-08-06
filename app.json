@@ -14,11 +14,12 @@
     },
     "ios": {
       "supportsTablet": true,
-      "infoPlist":{
+      "infoPlist": {
         "UIBackgroundModes": [
           "audio"
         ]
       },
+      "bundleIdentifier": "com.eduplatform.eduplatform"
     },
     "android": {
       "adaptiveIcon": {
@@ -26,10 +27,10 @@
         "backgroundColor": "#ffffff"
       },
       "package": "com.eduplatform.eduplatform",
-      "permissions":[
-       "android.permission.RECORD_AUDIO",
-       "android.permission.CAMERA",
-       "android.permission.CAMERA_ROLL"
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.CAMERA_ROLL",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
       ]
     },
     "web": {
@@ -39,13 +40,13 @@
     },
     "plugins": [
       "expo-router",
-         [
+      [
         "expo-av",
         {
           "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone."
         }
       ],
-       [
+      [
         "expo-image-picker",
         {
           "photosPermission": "custom photos permission",
